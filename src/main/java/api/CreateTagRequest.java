@@ -12,9 +12,9 @@ import java.math.BigDecimal;
  * endpoint.  See {@link controllers.ReceiptController#createReceipt(CreateReceiptRequest)} for
  * and example.
  */
-public class CreateReceiptRequest {
+public class CreateTagRequest {
     @NotEmpty
-    public String merchant;
-
-    public BigDecimal amount;
+    public String tagName;
+    @NotEmpty
+    public int receiptId;
 }
