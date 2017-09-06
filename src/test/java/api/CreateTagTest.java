@@ -27,7 +27,8 @@ public class CreateTagTest {
     @Test
     public void testMissingTagname() {
         CreateTagRequest tag = new CreateTagRequest();
-
+        // can pass without amount
+        //receipt.amount = new BigDecimal(33.44);
         assertThat(validator.validate(tag), hasSize(1));
     }
 
